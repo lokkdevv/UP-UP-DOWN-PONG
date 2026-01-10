@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bss4kv8vuib5p"]
+
+[ext_resource type="PackedScene" uid="uid://ligcr1vp1jpf" path="res://scenes/objects/player_pad.tscn" id="1_8wxmh"]
+[ext_resource type="PackedScene" uid="uid://b555awykqyhiy" path="res://scenes/objects/ball.tscn" id="2_pwihf"]
+
+[node name="main" type="Node2D"]
+
+[node name="player_pad" parent="." instance=ExtResource("1_8wxmh")]
+position = Vector2(56, 536)
+
+[node name="ball" parent="." instance=ExtResource("2_pwihf")]
+position = Vector2(960, 540)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
