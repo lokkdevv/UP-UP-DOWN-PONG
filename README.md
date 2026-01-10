@@ -15,7 +15,7 @@ The core game stays classic Pong. The strategy comes from deciding **when cheati
 ## Controls
 - **Move Paddle:**  
   - `W / S` or `↑ / ↓` (Keyboard)  
-  - Touch drag (Mobile)  
+  - Touch (Mobile)  
   - D-pad (Controller)
 - **Cheat Codes:**  
   - Type input sequences during the match  
