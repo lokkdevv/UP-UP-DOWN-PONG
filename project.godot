@@ -14,7 +14,7 @@ config/name="Up Up Down Pong"
 run/main_scene="uid://bss4kv8vuib5p"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 boot_splash/bg_color=Color(0.014275229, 0.0142752165, 0.014275211, 1)
-config/icon="res://icon.svg"
+config/icon="uid://t43b154nllqn"
 
 [autoload]
 
@@ -24,8 +24,10 @@ Global="*res://scripts/Global.gd"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=4
+window/size/mode=3
 window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_height"
+window/vsync/vsync_mode=0
 
 [editor_plugins]
 
@@ -48,8 +50,13 @@ down={
 ]
 }
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_clear_color=Color(0.04303915, 0.043039158, 0.04303913, 1)

@@ -1,11 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://ligcr1vp1jpf"]
+[gd_scene load_steps=5 format=3 uid="uid://ligcr1vp1jpf"]
 
 [ext_resource type="Script" uid="uid://c771a831c36ys" path="res://scripts/player_pad.gd" id="1_v0ml1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pxc8y"]
 size = Vector2(16, 136)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v0ml1"]
+size = Vector2(960, 540)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6tfo8"]
+size = Vector2(960, 540)
+
 [node name="player_pad" type="CharacterBody2D" groups=["paddle"]]
+motion_mode = 1
 script = ExtResource("1_v0ml1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -16,3 +23,25 @@ offset_left = -8.0
 offset_top = -68.0
 offset_right = 8.0
 offset_bottom = 68.0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="touch_controls" type="CanvasLayer" parent="Control"]
+
+[node name="up" type="TouchScreenButton" parent="Control/touch_controls"]
+position = Vector2(480, 270)
+shape = SubResource("RectangleShape2D_v0ml1")
+passby_press = true
+action = "up"
+
+[node name="down" type="TouchScreenButton" parent="Control/touch_controls"]
+position = Vector2(480, 810)
+shape = SubResource("RectangleShape2D_6tfo8")
+passby_press = true
+action = "down"

@@ -1,15 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://bss4kv8vuib5p"]
+[gd_scene load_steps=4 format=3 uid="uid://bss4kv8vuib5p"]
 
 [ext_resource type="PackedScene" uid="uid://ligcr1vp1jpf" path="res://scenes/objects/player_pad.tscn" id="1_8wxmh"]
 [ext_resource type="PackedScene" uid="uid://b555awykqyhiy" path="res://scenes/objects/ball.tscn" id="2_pwihf"]
+[ext_resource type="PackedScene" uid="uid://cmkyqmuddjshs" path="res://scenes/objects/AI/enemy.tscn" id="3_6hyye"]
 
 [node name="main" type="Node2D"]
 
-[node name="player_pad" parent="." instance=ExtResource("1_8wxmh")]
-position = Vector2(56, 536)
-
-[node name="ball" parent="." instance=ExtResource("2_pwihf")]
+[node name="ball2" parent="." instance=ExtResource("2_pwihf")]
 position = Vector2(960, 540)
+
+[node name="players" type="Node2D" parent="."]
+
+[node name="player_pad" parent="players" instance=ExtResource("1_8wxmh")]
+position = Vector2(56, 536)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
+
+[node name="enemy" parent="." node_paths=PackedStringArray("ball") instance=ExtResource("3_6hyye")]
+position = Vector2(1868, 543)
+motion_mode = 1
+ball = NodePath("../ball2")

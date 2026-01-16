@@ -1,6 +1,1 @@
-res://scenes/objects/player_pad.tscn
-res://scripts/player_pad.gd
-res://scenes/maps/main.tscn
 res://scenes/objects/ball.tscn
-res://scripts/ball.gd
-res://scripts/Global.gd
