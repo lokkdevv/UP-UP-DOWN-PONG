@@ -64,4 +64,5 @@ A fast-paced Pong-style game with a twist. Simple rules and optional multiplayer
 
 ## License
 
-MIT
+This project is licensed under the Source-Available Non-Commercial License.
+Commercial use is not permitted.
