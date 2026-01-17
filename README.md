@@ -1,10 +1,10 @@
-# Pong (Working Title)
+# UP UP DOWN PONG
 
 A fast-paced Pong-style game with a twist. Simple rules and optional multiplayer.
 
 ---
 
-## 🎮 Gameplay
+## Gameplay
 
 * Classic Pong foundation
 * GTA style cheat codes to stun the other player
