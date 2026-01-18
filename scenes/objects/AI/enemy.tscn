@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cywuck8qcrs1r" path="res://scripts/AI/enemy_controller.gd" id="1_u2u2s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_udvfw"]
-size = Vector2(16, 136)
+size = Vector2(16, 112)
 
 [node name="enemy" type="CharacterBody2D" groups=["paddle"]]
 script = ExtResource("1_u2u2s")
@@ -13,6 +13,6 @@ shape = SubResource("RectangleShape2D_udvfw")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -8.0
-offset_top = -68.0
+offset_top = -56.0
 offset_right = 8.0
-offset_bottom = 68.0
+offset_bottom = 56.0

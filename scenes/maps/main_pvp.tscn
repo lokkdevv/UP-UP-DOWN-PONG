@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cu8bt2y12if47"]
+
+[ext_resource type="PackedScene" uid="uid://b555awykqyhiy" path="res://scenes/objects/ball.tscn" id="1_kckdc"]
+[ext_resource type="PackedScene" uid="uid://bo7svb3051v0r" path="res://scenes/objects/player2_pad.tscn" id="3_kckdc"]
+[ext_resource type="PackedScene" uid="uid://ligcr1vp1jpf" path="res://scenes/objects/player_pad.tscn" id="3_oodd4"]
+[ext_resource type="PackedScene" uid="uid://cpxx6subdqm60" path="res://scenes/score_ui.tscn" id="4_sj0b8"]
+
+[node name="main" type="Node2D"]
+
+[node name="ball2" parent="." instance=ExtResource("1_kckdc")]
+position = Vector2(640, 360)
+
+[node name="players" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(1253, 369)
+
+[node name="player_pad" parent="players" instance=ExtResource("3_oodd4")]
+position = Vector2(-1231, -9)
+
+[node name="player_pad2" parent="players" instance=ExtResource("3_kckdc")]
+position = Vector2(2, -11)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(640, 360)
+
+[node name="score_ui" parent="." instance=ExtResource("4_sj0b8")]

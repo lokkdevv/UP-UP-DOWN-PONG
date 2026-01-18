@@ -3,12 +3,12 @@
 [ext_resource type="Script" uid="uid://dvkoto0uc7sg8" path="res://scripts/ball.gd" id="1_itkb2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hlf5b"]
-radius = 17.0
+radius = 14.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_hlf5b"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_itkb2"]
-radius = 16.0
+radius = 13.0
 
 [node name="ball" type="CharacterBody2D"]
 script = ExtResource("1_itkb2")
@@ -20,7 +20,7 @@ shape = SubResource("CircleShape2D_hlf5b")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 position = Vector2(0, 6.920358e-06)
-scale = Vector2(32.036285, 32.036304)
+scale = Vector2(26.029482, 26.029495)
 mesh = SubResource("SphereMesh_hlf5b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

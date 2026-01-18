@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://ligcr1vp1jpf"]
+[gd_scene load_steps=5 format=3 uid="uid://bo7svb3051v0r"]
 
-[ext_resource type="Script" uid="uid://c771a831c36ys" path="res://scripts/player_pad.gd" id="1_v0ml1"]
+[ext_resource type="Script" uid="uid://vjysa23oiev4" path="res://scripts/player2_pad.gd" id="1_e5elv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pxc8y"]
 size = Vector2(16, 112)
@@ -13,7 +13,7 @@ size = Vector2(640, 360)
 
 [node name="player_pad" type="CharacterBody2D" groups=["paddle"]]
 motion_mode = 1
-script = ExtResource("1_v0ml1")
+script = ExtResource("1_e5elv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_pxc8y")
@@ -36,13 +36,13 @@ grow_vertical = 2
 [node name="touch_controls" type="CanvasLayer" parent="Control"]
 
 [node name="up" type="TouchScreenButton" parent="Control/touch_controls"]
-position = Vector2(320, 180)
+position = Vector2(960, 180)
 shape = SubResource("RectangleShape2D_v0ml1")
 passby_press = true
-action = "up"
+action = "up2"
 
 [node name="down" type="TouchScreenButton" parent="Control/touch_controls"]
-position = Vector2(320, 540)
+position = Vector2(960, 540)
 shape = SubResource("RectangleShape2D_6tfo8")
 passby_press = true
-action = "down"
+action = "down2"
