@@ -7,3 +7,6 @@ var ball_y_position := 0.0
 
 var player1_score := 0
 var player2_score := 0
+
+var player1_ability := false
+var player2_ability := false

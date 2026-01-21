@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://5jila7byolkl"]
+
+[ext_resource type="Texture2D" uid="uid://ch6dkuirgjg34" path="res://assets/down.png" id="1_1k712"]
+
+[node name="down_hint" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.01, 0.01)
+mouse_filter = 2
+texture = ExtResource("1_1k712")

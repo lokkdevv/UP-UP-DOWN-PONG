@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://hsuyejvbxixy"]
+
+[ext_resource type="Script" uid="uid://m8aanf6wrr0q" path="res://scripts/hints/player2_cheat_code_ui.gd" id="1_q4mwu"]
+
+[node name="player2_cheat_code_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q4mwu")
+
+[node name="input_timer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="interval_timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 486.0
+offset_top = 75.0
+offset_right = -486.0
+offset_bottom = 115.0
+grow_horizontal = 2
+
+[connection signal="timeout" from="input_timer" to="." method="_on_input_timer_timeout"]
+[connection signal="timeout" from="interval_timer" to="." method="_on_interval_timer_timeout"]

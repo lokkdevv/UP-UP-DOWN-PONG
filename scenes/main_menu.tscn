@@ -32,14 +32,17 @@ alignment = 1
 
 [node name="AI" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 75
 text = "vs AI"
 
 [node name="pvp" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 75
 text = "vs PLAYER"
 
 [node name="quit" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 75
 text = "quit"
 
 [connection signal="pressed" from="Panel/VBoxContainer/AI" to="." method="_on_ai_pressed"]
